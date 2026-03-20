@@ -40,6 +40,14 @@ def main_page():
         except Exception as e:
             st.error(f"Failed to load stories: {e}")
 
+    if st.sidebar.button("Logout"):
+        try:
+            supabase.auth.sign_out()
+        except:
+            pass
+        for key in list(st.session_state.keys()):
+            del st.session_state[key]
+        st.rerun()
     # ── STORIES LIST PAGE ──────────────────────────────────────────────
     if st.session_state.get("view") == "stories_list":
         st.markdown("## 📚 My Stories")
@@ -214,3 +222,5 @@ def main_page():
                         st.rerun()
                     except Exception as e:
                         st.error(f"Failed to save: {e}")
+
+    

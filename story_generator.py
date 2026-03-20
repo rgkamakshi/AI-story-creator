@@ -15,8 +15,14 @@ def generate_story(child_name,age,characters,setting,tone,length):
         count = st.session_state.get("guest_image_count", 0)
         if count >= 1:
             st.warning("Please sign up for unlimited stories!")
+            st.info("🔒 Sign up to save your stories!")
+            if st.button("Sign Up"):
+                st.session_state["guest"] = False
+                st.session_state["view"] = "login"
+                st.rerun()
             st.stop()
-        st.session_state["guest_image_count"] = count + 1
+        else:
+            st.session_state["guest_image_count"] = count + 1
     # print("inside function")
     # print(f"characters name is {characters}")
     # print(f"setting is in the {setting}")
