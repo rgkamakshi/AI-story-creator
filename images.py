@@ -1,4 +1,3 @@
-from huggingface_hub import InferenceClient
 from PIL import Image
 from io import BytesIO
 import streamlit as st
