@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 streamlit
 supabase
 Pillow
@@ -13,19 +12,4 @@ datetime
 PIL
 io
 base64
-=======
-streamlit
-supabase
-Pillow
-requests
-python-dotenv
-fal-client
-replicate
-os
-Groq
-dotenv
-datetime
-PIL
-io
-base64
->>>>>>> 09ef6349e81c30672b9b361a1ce9891609d0c08c
+
