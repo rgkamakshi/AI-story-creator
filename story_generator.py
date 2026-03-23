@@ -39,6 +39,16 @@ def generate_story(child_name,age,characters,setting,tone,length):
             Use appropriate words and language suitable for child.
             Make the plot imaginative and engaging.
             Structure the story in clear paragraph.
+
+            STRICT RULES FOR CHARACTERS:
+               - Use EXACTLY the characters listed above, no others
+               - DO NOT replace or add bears, rabbits, or any unlisted animals
+               - Give each character a unique name and distinct personality
+               - The child {child_name} is the MAIN protagonist of the story
+               - Supporting characters must complement {child_name}'s journey
+           
+            DO NOT include bears or rabbits unless explicitly listed in characters above.
+            DO NOT use generic or stereotypical animal characters.  
            
             
          
