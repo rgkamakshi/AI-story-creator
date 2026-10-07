@@ -174,8 +174,11 @@ def main_page():
         else:
             with st.spinner("Creating your magical story..."):
                 story_gen = generate_story(child_name, age, characters, setting, tone, length)
+                st.write("Story generated successfully!")
                 image_details = extract_image_details(story_gen, child_name,characters,setting)
+                st.write("Image details extracted successfully!")
                 image_gen = generate_image(image_details)
+                st.write("Image generated successfully!")
                 st.session_state["story"] = story_gen
                 st.session_state["title"] = f"{child_name}'s {tone} story"
                 #st.session_state["image_details"] = image_details
