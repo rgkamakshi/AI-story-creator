@@ -93,8 +93,8 @@ def generate_image(image_details):
     # FLUX.2 Klein uses multipart/form-data
     data = {
         "prompt": prompt,
-        "width": "1024",
-        "height": "1024"
+        "width": "768",
+        "height": "768"
     }
 
     response = requests.post(
